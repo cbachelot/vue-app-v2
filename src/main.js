@@ -27,6 +27,7 @@ Vue.use(VueRouter)
 // keep it simple for now.
 const router = new VueRouter({
   routes, // short for routes: routes
+  mode: 'history'
 })
 // instatinat the vue instance
 new Vue({
