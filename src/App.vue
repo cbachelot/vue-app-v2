@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  <my-header></my-header>
   <my-nav></my-nav>
     <transition
         name="fade"
@@ -20,6 +21,7 @@
 
 import Footer from './components/Footer'
 import Nav from './components/Nav'
+import Header from './components/Header'
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
   },
   components: {
     'my-footer': Footer,
-    'my-nav': Nav
+    'my-nav': Nav,
+    'my-header': Header
   },
   methods: {
     beforeLeave (element) {
